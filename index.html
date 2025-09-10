@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
+    <meta name="keywords" content="포트폴리오, UI/UX 디자인, 웹 개발, 웹디자인, 정겨울, 크리에이티브 디자이너">
+    <meta name="author" content="정겨울">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://winter-jung.github.io/Creative-Designer/">
+    <meta property="og:title" content="정겨울의 포트폴리오 | Creative Designer">
+    <meta property="og:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
+    <meta property="og:image" content="./1255jx-Photoroom.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:url" content="https://winter-jung.github.io/Creative-Designer/">
+    <meta property="twitter:title" content="정겨울의 포트폴리오 | Creative Designer">
+    <meta property="twitter:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹 개발, 웹디자인 작업물을 소개합니다.">
+    <meta property="twitter:image" content="./1255jx-Photoroom.png">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <title>정겨울의 포트폴리오</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+    </style>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#a_home">Winter</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#b_about">ABOUT</a></li>
+            <li><a href="#c_service">SERVICES</a></li>
+            <li><a href="#d_portfolio">PORTFOLIO</a></li>
+            <li><a href="#e_price">PRICE</a></li>
+            <li><a href="#f_contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="a_home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="sub">신입 웹퍼블리셔</span> 정겨울입니다!</h1>
+                <p class="hero-subtitle">#열정적인 #회복탄력성</p>
+                <p class="hero-subtitle">#활동적인 #함께달리기</p>
+                <a href="#f_contact" class="hire-btn">이력서 보기</a>
+                <a href src="https://github.com/winter-jung" class="hire-btn">깃허브 가기</a>
+            </div>
+            <div class="hero-image">
+                <div class="person-silhouette"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="b_about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="laptop-mockup"></div>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>안녕하세요, 산업디자인·제품디자인을 전공하고 졸업한 디자이너 정겨울입니다.
+                        일러스트와 포토샵을 활용한 그래픽 디자인을 중심으로,
+                        피그마(Figma)를 이용한 프로토타입 제작 및 원활한 디자인 협업을 진행합니다. 또한 Adobe Premiere와 After Effects를 활용해 영상으로 이야기를
+                        완성할 수 있습니다.
+                        아이디어를 시각으로 구현하는 전 과정에 참여하며, 세심한 완성도를 추구합니다.
+
+                        사람과 함께 작업하는 것을 좋아하고 협업에서 에너지를 얻습니다.
+                        창의적이고 실행력이 있으며, 달리기를 즐겨 체력이 건강하고 집중력이 좋습니다. 변화나 난관 앞에서도 빠르게 회복하며 끝까지 완주하는 태도로 프로젝트를 이끌어갑니다.</p>
+                    <a href="#c_service" class="services-btn">MY SERVICES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Best Section -->
+    <section class="why-best">
+        <div class="container">
+            <div class="why-best-content">
+                <div class="why-best-text">
+                    <h2>Why Im Best</h2>
+                    <p>In the beginning I have a dream. Later, with passion, commitment and perseverance begun to turn
+                        more and more of my ideas into life. I painted the world and sold dreams. Despite being still a
+                        rather young designer he has been already often honored for his work, yet he is still hungry for
+                        new challenges and in constant search for inspiration. He is not hiding in the average but
+                        adheres to the principle of not settling for almost because almost won't do.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <h3>I'M Creative</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>I AM GENIUS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>I AM Punctual</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="c_service" class="services">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="icon-branding"></i>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="icon-app"></i>
+                    </div>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="icon-graphic"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="icon-web"></i>
+                    </div>
+                    <h3>Web Developing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">Project working</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="900">0</div>
+                    <div class="stat-label">Project Done</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Awards Received</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="d_portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Portfolio items would go here -->
+                <div class="portfolio-images">
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div>
+                </div>
+            </div>
+            <a href="#" class="view-all-btn">VIEW ALL</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonial</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <p>consectetur adipiscing elit. Suspendisse condimentum egestas tellus et viverra. Vestibulum
+                        euismod lacus eget nisi ornare, id laoreet tortor dapibus. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse condimentum egestas tellus et viverra. Vestibulum
+                        euismod lacus eget nisi ornare, id laoreet tortor dapibus.</p>
+                    <div class="testimonial-author">
+                        <h4>Yasin</h4>
+                        <span>Founder, CreativeRacer.net</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>Suspendisse condimentum egestas tellus et viverra. Vestibulum euismod lacus eget nisi ornare, id
+                        laoreet tortor dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        condimentum egestas tellus et viverra. Vestibulum euismod lacus eget nisi ornare, id laoreet
+                        tortor dapibus.</p>
+                    <div class="testimonial-author">
+                        <h4>Rahman</h4>
+                        <span>Designer, CreativeRacer.net</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum egestas tellus
+                        et viverra. Vestibulum euismod lacus eget nisi ornare, id laoreet tortor dapibus. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum egestas tellus et viverra.
+                        Vestibulum euismod lacus eget nisi ornare.</p>
+                    <div class="testimonial-author">
+                        <h4>Munna</h4>
+                        <span>Developer, CreativeRacer.net</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="e_price" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Price</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$ 20 <span>/ Month</span></div>
+                    <ul class="features">
+                        <li>10 Projects</li>
+                        <li>2 GB Storage</li>
+                        <li>10 GB Bandwidth</li>
+                        <li>Enhanced Security</li>
+                        <li>Unlimited domain</li>
+                    </ul>
+                    <a href="#" class="order-btn">ORDER</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Standard</h3>
+                    <div class="price">$ 50 <span>/ Month</span></div>
+                    <ul class="features">
+                        <li>15 Projects</li>
+                        <li>5 GB Storage</li>
+                        <li>15 GB Bandwidth</li>
+                        <li>Enhanced Security</li>
+                        <li>Unlimited domain</li>
+                    </ul>
+                    <a href="#" class="order-btn">ORDER</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <div class="price">$ 70 <span>/ Month</span></div>
+                    <ul class="features">
+                        <li>20 Projects</li>
+                        <li>10 GB Storage</li>
+                        <li>30 GB Bandwidth</li>
+                        <li>Enhanced Security</li>
+                        <li>Unlimited domain</li>
+                    </ul>
+                    <a href="#" class="order-btn">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="f_contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hire Me</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                                <label for="name">Name:</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                                <label for="email">Email:</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+                                <label for="phone">Cell Phone:</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Enter Your Message" rows="6"
+                                required></textarea>
+                            <label for="message">Message:</label>
+                        </div>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                        <div class="form-status">
+                            <div class="status-submitting" style="display: none;">Submitting Form...</div>
+                            <div class="status-error" style="display: none;">The server encountered an error.</div>
+                            <div class="status-success" style="display: none;">Form received.</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>📩 wkdpffl730@gmail.com</strong>
+                    </div>
+                    <div class="contact-item">
+                        <strong>🔧 https://github.com/winter-jung</strong>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 010 - 3570 - 1620</strong>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📌경기도 양주시</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; winter-jung - 2025. All Rights Reserved By Creative Racer.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
