@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, "-=0.3");
 
     // Scroll-triggered animations
-    gsap.utils.toArray('.about-text, .about-image, .why-best-text, .skills').forEach(element => {
+    gsap.utils.toArray('.about-text,  .why-best-text, .skills').forEach(element => {
         gsap.from(element, {
             opacity: 0,
             y: 60,
