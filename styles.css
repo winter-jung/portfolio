@@ -128,11 +128,11 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 .portfolio-item { height: 300px; background: linear-gradient(45deg, #f0f0f0, #e0e0e0); border-radius: 10px; transition: all 0.3s ease; cursor: pointer; overflow: hidden; }
 
-.portfolio-item img { width: 100%; }
+.portfolio-item img { width: 100%; object-fit: cover; height: 100%; }
 
 .portfolio-item:hover { transform: scale(1.05); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); }
 
-.pf { text-align: left; margin-left: 70px; margin-top: 40px;}
+.pf { text-align: left; margin-left: 70px; margin-top: 40px; }
 
 .p-btn { display: inline-block; background: #4a90e2; color: #fff; padding: 15px 40px; text-decoration: none; font-weight: 600; letter-spacing: 1px; border-radius: 30px; margin-top: 30px; transition: all 0.s ease; }
 
