@@ -132,7 +132,7 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 .portfolio-item:hover { transform: scale(1.05); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); }
 
-.pf { text-align: left; margin-left: 70px; margin-top: 40px; }
+.pf { text-align: left; margin-left: 70px; margin-top: 40px; line-height: 35px; }
 
 .p-btn { display: inline-block; background: #4a90e2; color: #fff; padding: 15px 40px; text-decoration: none; font-weight: 600; letter-spacing: 1px; border-radius: 30px; margin-top: 30px; transition: all 0.s ease; }
 
