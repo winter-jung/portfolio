@@ -54,8 +54,6 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 .about-image { position: relative; left: -58px; }
 
-.laptop-mockup { width: 100%; height: 300px; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect x="20" y="20" width="360" height="220" rx="10" fill="%23e6e6e6" stroke="%23ccc" stroke-width="2"/><rect x="40" y="40" width="320" height="180" fill="%23fff"/><rect x="180" y="250" width="40" height="20" rx="10" fill="%23ccc"/><ellipse cx="200" cy="270" rx="60" ry="10" fill="%23ddd"/></svg>') center/contain no-repeat; }
-
 .about-text h2 { font-size: 48px; color: #333; margin-bottom: 30px; font-weight: 500; }
 .profile-info { display: flex; flex-direction: column; gap: 2rem; }
 
@@ -122,7 +120,7 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 .stat-label { font-size: 18px; color: rgba(255, 255, 255, 0.9); }
 
 /* Portfolio Section */
-.portfolio { padding: 120px 0; background: #fff; text-align: center; height: 5000px; }
+.portfolio { padding: 120px 0; background: #fff; text-align: center; height: auto; }
 
 .portfolio-images { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 50px; }
 
@@ -134,9 +132,19 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 .pf { text-align: left; margin-left: 70px; margin-top: 40px; line-height: 35px; }
 
-.p-btn { display: inline-block; background: #4a90e2; color: #fff; padding: 15px 40px; text-decoration: none; font-weight: 600; letter-spacing: 1px; border-radius: 30px; margin-top: 30px; transition: all 0.s ease; }
+.p-btn { display: inline-block; background: #4a90e2; color: #fff; padding: 5px 20px; margin: 6px; text-decoration: none; font-weight: 600; letter-spacing: 1px; border-radius: 30px; margin-top: 30px; transition: all 0.s ease; }
 
 .p-btn:hover { background: #357abd; transform: translateY(-2px); box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4); }
+
+.mock { position: relative; width: 100%; height: 700px; }
+.left, .right { max-width: 50%; }
+.crop:before {content: ''; background-image: url(./image/phone_mockup.jpg);}
+.crop { right: 0; position: absolute; width: 375px; height: 812px; overflow: hidden; border-radius: 32px; }
+
+.crop iframe { display: block; width: 375px; height: 812px; }
+
+.no { font-size: 2rem; }
+
 
 /* Testimonials Section */
 .testimonials { padding: 120px 0; background: #f8f9fa; text-align: center; }
@@ -215,7 +223,7 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 .status-success { color: #27ae60; }
 
-.contact-info { padding: 50px 0; }
+.contact-info { padding: 50px 0; text-align: center;}
 
 .contact-item { margin-bottom: 30px; font-size: 16px; color: #666; }
 
@@ -264,4 +272,7 @@ svg { width: 220px; height: 220px; }
 
 circle { fill: #48ff00; stroke-width: 20; stroke: red; stroke-dashoffset: 628; stroke-dasharray: 628; transform: rotate(-90deg); transform-origin: 50% 50%; stroke-linecap: round; }
 
-section { height: 100vh; }
+/* Removed global section height to allow natural content flow */
+
+
+section { height: 100vh; } /* 머지 일단 지웠었는데 살려봄 */

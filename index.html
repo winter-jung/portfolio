@@ -9,14 +9,14 @@
     <meta name="author" content="정겨울">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" <meta property="og:url"
-        content="https://winter-jung.github.io/Creative-Designer/">
+    <!-- Open Graph / Facebook  이부분 고치기-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://winter-jung.github.io/Creative-Designer/">
     <meta property="og:title" content="정겨울의 포트폴리오 | Creative Designer">
     <meta property="og:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
     <meta property="og:image" content="./1255jx-Photoroom.png">
 
-    <!-- Twitter -->
+    <!-- Twitter ㅇㅣ부분 고치기-->
     <meta property="twitter:url" content="https://winter-jung.github.io/Creative-Designer/">
     <meta property="twitter:title" content="정겨울의 포트폴리오 | Creative Designer">
     <meta property="twitter:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹 개발, 웹디자인 작업물을 소개합니다.">
@@ -41,9 +41,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
-    <script src=""></script>
+
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="pstyles.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -109,9 +110,6 @@
                             </ul>
                         </div>
                     </div>
-
-
-                    </p>
                     <a href="#f_contact" class="services-btn">Hire Me</a>
                 </div>
             </div>
@@ -123,6 +121,7 @@
         <div class="container">
             <div class="why-best-content">
                 <div class="why-best-text">
+
                     <h2>Why Im Best</h2>
                     <p>저는 러닝을 좋아하며, 입사 후에도 퇴근 후 매일 러닝을 이어갈 계획입니다.<br>
                         러닝은 제게 단순한 운동을 넘어<br>
@@ -188,7 +187,16 @@
     <!-- Portfolio Section -->
     <section id="d_portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
+
+
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="title-decoration"></div>
+                    <h2>Portfolio</h2>
+                    <div class="title-decoration"></div>
+                </div>
+
+            </div>
             <div class="portfolio-grid">
                 <!-- Portfolio items would go here -->
                 <div class="portfolio-images">
@@ -198,12 +206,12 @@
                     <div class="portfolio-text">
                         <span class="no">Project 01</span>
                         <div class="pf">
-                            <p>기술스택 : HTML / CSS / JAVASCRIPT </p>
+                            <p>기술스택 : REACT / PYTHON </p>
                             <p>배포매체 : Vercel / Render</p>
-                            <p>작업기간 : 3주소요</p>
+                            <p>작업기간 : 3주</p>
                             <p>본인기여도 : 45%</p>
 
-                            <a href="https://frontend-omega-self.vercel.app/" class="p-btn" target="_blank">배포 주소</a>
+                            <a href="https://frontend-omega-self.vercel.app/" class="p-btn" target="_blank">사이트</a>
                             <a href="https://github.com/winter-jung/frontend" class="p-btn" target="_blank">깃허브</a>
                             <a href="#" class="p-btn" target="_blank">기획서</a>
                         </div>
@@ -219,29 +227,117 @@
                 </div>
                 <div class="portfolio-images">
 
-                    <div class="portfolio-item"><img src="./image/yeogigo.png" alt=""></div>
+                    <div class="portfolio-item"><img src="./image/livengrow.PNG" alt=""></div>
 
                     <div class="portfolio-text">
                         <span class="no">Project 03</span>
                     </div>
                 </div>
-                <div class="portfolio-images">
 
-                    <div class="portfolio-item"><img src="./image/livengrow.PNG" alt=""></div>
+                <div class="container">
+                    <div class="mock">
+                        <div class="left">
+                            <span class="no">Project 04</span>
+                        </div>
+                        <div class="crop right">
 
-                    <div class="portfolio-text">
-                        <span class="no">Project 04</span>
+                            <div class="portfolio-text">
+                            </div>
+                            <iframe
+                                src="https://embed.figma.com/proto/T7gWpfXwrvssxNMyOjys06/UXUI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?page-id=0%3A1&node-id=4-2623&p=f&viewport=2195%2C1889%2C0.51&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A2485&embed-host=share&hide-ui=1"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-images">
 
-                    <div class="portfolio-item"><img src="" alt=""></div>
-
-                    <div class="portfolio-text">
-                        <span class="no">Project 05</span>
-                    </div>
-                </div>
+            </div> <!-- .portfolio-grid -->
+        </div> <!-- .container -->
     </section>
+
+
+
+
+    <!-- filtering Section -->
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="title-decoration"></div>
+                    <h2>Artworks of Graphic Design</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                <p class="section-description">Lorem ipsum dolor sit amet consectetur. Nunc luctus malesuada massa at
+                    donec diam. Felis nec sit a in sodales. Quis pellentesque nisl laoreet sagittis.</p>
+            </div>
+            <div class="filter">
+                <button class="fbtn active" data-filter="all">All</button>
+                <button class="fbtn" data-filter="mdl">Modeling</button>
+                <button class="fbtn" data-filter="fsh">Fashion</button>
+                <button class="fbtn" data-filter="ads">Ads</button>
+                <button class="fbtn" data-filter="awd">Awards</button>
+            </div>
+            <div class="grid">
+                <div class="item" data-cate="mdl" data-url="./sub1.html">
+                    <img src="https://placedog.net/500?id=5" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="fsh" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=7" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="ads" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=15" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="awd" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=55" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="mdl" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=5" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="fsh" data-url="./sub1.html">
+                    <img src="https://placedog.net/500?id=7" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Ajax 내용이 여기에 로드됩니다 -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- / filltering -->
+
+
+
 
     <!-- Testimonials Section -->
     <section class="testimonials">
@@ -288,58 +384,25 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="f_contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Hire Me</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Enter Name" required>
-                                <label for="name">Name:</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Enter Email" required>
-                                <label for="email">Email:</label>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
-                                <label for="phone">Cell Phone:</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Enter Your Message" rows="6"
-                                required></textarea>
-                            <label for="message">Message:</label>
-                        </div>
-                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
-                        <div class="form-status">
-                            <div class="status-submitting" style="display: none;">Submitting Form...</div>
-                            <div class="status-error" style="display: none;">The server encountered an error.</div>
-                            <div class="status-success" style="display: none;">Form received.</div>
-                        </div>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>📩 wkdpffl730@gmail.com</strong>
-                    </div>
-                    <div class="contact-item">
-                        <strong>🔧 https://github.com/winter-jung</strong>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📞 010 - 3570 - 1620</strong>
-                    </div>
-                    <div class="contact-item">
-                        <strong>📌경기도 양주시</strong>
-                    </div>
-                </div>
-            </div>
+
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <strong>📩 wkdpffl730@gmail.com</strong>
         </div>
-    </section>
+        <div class="contact-item">
+            <strong>🔧 https://github.com/winter-jung</strong>
+        </div>
+        <div class="contact-item">
+            <strong>📞 010 - 3570 - 1620</strong>
+        </div>
+        <div class="contact-item">
+            <strong>📌경기도 양주시</strong>
+        </div>
+    </div>
+
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -407,6 +470,7 @@
 
     </script>
     <script src="script.js"></script>
+    <script src="js.js"></script>
 
 </body>
 
