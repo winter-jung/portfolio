@@ -148,10 +148,11 @@ h1::before { position: absolute; content: '달리는'; color: #357abd; font-size
 
 
 /* 여기 다시 고쳐보기 */
-.iframe::before{
+.crop::before{
   content: "";
   background-image: url('./image/phone_mockup.jpg');
   background-size: cover;
+
 }
 
 .no { font-size: 2rem; }
