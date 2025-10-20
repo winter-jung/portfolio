@@ -1,5 +1,27 @@
 // GSAP Animations and Interactions
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    // Custom cursor initialization
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
+
+    // Cursor movement
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    });
+
+    // Add active class on interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .portfolio-item, .hire-btn');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+
+    // Hide cursor when leaving the window
+    document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+    document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -9,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                gsap.to(window, {duration: 1, scrollTo: target, ease: "power2.inOut"});
+                gsap.to(window, { duration: 1, scrollTo: target, ease: "power2.inOut" });
             }
         });
     });
@@ -112,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 start: "top 80%",
                 toggleActions: "play none none reverse"
             },
-            onUpdate: function() {
+            onUpdate: function () {
                 stat.textContent = Math.ceil(stat.textContent);
             }
         });
@@ -227,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const statusError = document.querySelector('.status-error');
     const statusSuccess = document.querySelector('.status-success');
 
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Show submitting status
@@ -315,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Loading animation
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     gsap.to('body', {
         opacity: 1,
         duration: 0.5,
@@ -325,3 +347,30 @@ window.addEventListener('load', function() {
 
 // Initialize body opacity
 gsap.set('body', { opacity: 0 });
+
+// h1::before 애니메이션: 작게 시작해서 회전하면서 커지고, 커지면 회전 멈춤
+(() => {
+  // 연속 회전 트윈: CSS 변수에 +=360deg로 계속 회전시킴
+  const rotationTween = gsap.to('.hero-title', {
+    '--before-rotate': '+=360deg',
+    duration: 1,           // 1초에 한 바퀴
+    repeat: -1,
+    ease: 'linear'
+  });
+
+  // 스케일 트윈: 작게 시작해서 커지며 완료되면 회전 트윈 종료
+  gsap.fromTo('.hero-title',
+    { '--before-scale': '0.2' },
+    {
+      '--before-scale': '1',
+      duration: 1.5,
+      ease: 'power3.out',
+      onComplete() {
+        // 회전 멈추기: 반복 트윈 종료 후 현재 회전 값을 적절히 정렬(옵션)
+        rotationTween.kill();
+        // 선택사항: 멈춘 상태를 자연스럽게 0deg로 맞추려면 아래와 같이 설정
+        gsap.to('.hero-title', { '--before-rotate': '45deg', duration: 0.4, ease: 'power2.out' });
+      }
+    }
+  );
+})();
