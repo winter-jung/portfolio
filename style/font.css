@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "MangoDdobak-R";
+  src: url("https://cdn.jsdelivr.net/gh/fontbee/font@main/Mangoboard/MangoDdobak-R.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MangoDdobak-L";
+  src: url("https://cdn.jsdelivr.net/gh/fontbee/font@main/Mangoboard/MangoDdobak-L.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MangoDdobak-B";
+  src: url("https://cdn.jsdelivr.net/gh/fontbee/font@main/Mangoboard/MangoDdobak-B.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
