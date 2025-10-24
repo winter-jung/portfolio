@@ -257,24 +257,24 @@
         <div class="skill-item">
           <div class="skill-header">
             <span class="skill-name">WordPress</span>
-            <span class="skill-percent">95%</span>
+            <span class="skill-percent">90%</span>
           </div>
           <div class="skill-bar">
-            <div class="skill-progress" data-progress="95"></div>
+            <div class="skill-progress" data-progress="90"></div>
           </div>
         </div>
         <div class="skill-item">
           <div class="skill-header">
             <span class="skill-name">JavaScript</span>
-            <span class="skill-percent">85%</span>
+            <span class="skill-percent">70%</span>
           </div>
           <div class="skill-bar">
-            <div class="skill-progress" data-progress="85"></div>
+            <div class="skill-progress" data-progress="70"></div>
           </div>
         </div>
         <div class="skill-item">
           <div class="skill-header">
-            <span class="skill-name">Redux</span>
+            <span class="skill-name">Figma</span>
             <span class="skill-percent">80%</span>
           </div>
           <div class="skill-bar">
@@ -292,11 +292,11 @@
         </div>
         <div class="skill-item">
           <div class="skill-header">
-            <span class="skill-name">Python</span>
-            <span class="skill-percent">75%</span>
+            <span class="skill-name">Illustration</span>
+            <span class="skill-percent">90%</span>
           </div>
           <div class="skill-bar">
-            <div class="skill-progress" data-progress="75"></div>
+            <div class="skill-progress" data-progress="90"></div>
           </div>
         </div>
         <div class="skill-item">
@@ -311,13 +311,78 @@
       </div>
     </div>
   </section>
+
   <!-- ArtWork Section -->
+
   <!-- <section class="artworks" id="artworks">
     <div class="container">
       <h2 class="section-title">Artworks</h2>
       <p class="section-description text-noto text-gray">디자인 작업물과 창작 활동을 소개합니다.</p>
-    </div>
-  </section> -->
+
+
+           <div class="filter">
+                <button class="fbtn active" data-filter="all">All</button>
+                <button class="fbtn" data-filter="mdl">2D</button>
+                <button class="fbtn" data-filter="fsh">Contents</button>
+                <button class="fbtn" data-filter="ads">Goods</button>
+                <button class="fbtn" data-filter="awd">Logo</button>
+            </div>
+            <div class="grid">
+                <div class="item" data-cate="mdl" data-url="./sub1.html">
+                    <img src="./imgs/diary-thumbnail.png" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>굿노트 다이어리</h4>
+                        <p>굿노트 전용 만년형 다이어리 디자인 제작</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="fsh" data-url="./sub2.html">
+                    <img src="./imgs/ai-poster.png" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="ads" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=15" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="awd" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=55" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="mdl" data-url="./sub2.html">
+                    <img src="https://placedog.net/500?id=5" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="item" data-cate="fsh" data-url="./sub1.html">
+                    <img src="https://placedog.net/500?id=7" alt="Portfolio Item">
+                    <div class="overlay">
+                        <h4>model</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+  </section>
+     <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Ajax 내용이 여기에 로드됩니다 -->
+            </div>
+        </div>
+    </div> -->
+
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
@@ -326,7 +391,7 @@
         <div class="contact-info">
           <div class="contact-item text-noto">
             <i class="fas fa-map-marker-alt"></i>
-            <span>경기도 양주</span>
+            <span>경기도 양주시</span>
           </div>
           <div class="contact-item text-noto">
             <i class="fas fa-envelope"></i>
@@ -344,7 +409,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script/script.js"></script>
+  <script src="script/filtering.js"></script>
 </body>
 
 </html>
