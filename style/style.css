@@ -98,7 +98,8 @@ a {
 }
 .btn,
 .btn_line:hover {
-  margin-right: 8px;
+  margin: 8px;
+   scale: calc(1.2);
   display: inline-flex;
   font-family: var(--suit), Sans-serif;
   font-size: 16px;
@@ -115,7 +116,7 @@ a {
   font-weight: 700;
 }
 .btn_line {
-  margin-right: 8px;
+  margin: 8px;
   display: inline-flex;
   font-family: var(--suit), Sans-serif;
   font-size: 16px;
@@ -635,6 +636,9 @@ a {
 .project-link:hover {
   color: #a29bfe;
 }
+
+
+.p_btn{text-align: center; ;}
 
 /* Artworks Section */
 .artworks {
