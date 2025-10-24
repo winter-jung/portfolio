@@ -2,760 +2,328 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
-    <meta name="keywords" content="포트폴리오, UI/UX 디자인, 웹 개발, 웹디자인, 정겨울, 크리에이티브 디자이너">
-    <meta name="author" content="정겨울">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook  이부분 고치기-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://winter-jung.github.io/Creative-Designer/">
-    <meta property="og:title" content="정겨울의 포트폴리오 | Creative Designer">
-    <meta property="og:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
-    <meta property="og:image" content="./1255jx-Photoroom.png">
-
-    <!-- Twitter ㅇㅣ부분 고치기-->
-    <meta property="twitter:url" content="https://winter-jung.github.io/Creative-Designer/">
-    <meta property="twitter:title" content="정겨울의 포트폴리오 | Creative Designer">
-    <meta property="twitter:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹 개발, 웹디자인 작업물을 소개합니다.">
-    <meta property="twitter:image" content="./1255jx-Photoroom.png">
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <title>정겨울의 포트폴리오</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css');
-        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-    </style>
-
-    <!-- GSAP Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
-
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
+  <meta name="keywords" content="포트폴리오, UI/UX 디자인, 웹 개발, 웹디자인, 정겨울, 크리에이티브 디자이너">
+  <meta name="author" content="정겨울">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://winter-jung.github.io/Creative-Designer/">
+  <meta property="og:title" content="정겨울의 포트폴리오 | Creative Designer">
+  <meta property="og:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹디자인 작업물을 소개합니다.">
+  <meta property="og:image" content="./img/snscard.png">
+  <!-- Twitter 부분 고치기-->
+  <meta property="twitter:url" content="https://winter-jung.github.io/Creative-Designer/">
+  <meta property="twitter:title" content="정겨울의 포트폴리오 | Creative Designer">
+  <meta property="twitter:description" content="정겨울의 크리에이티브 디자이너 포트폴리오입니다. UI/UX 디자인, 웹 개발, 웹디자인 작업물을 소개합니다.">
+  <meta property="twitter:image" content="./img/snscard.png">
+  <title>정겨울의 포트폴리오</title>
+  <!-- GSAP -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-brand">
-            <a href="#a_home">Winter</a>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#b_about">ABOUT</a></li>
-            <li><a href="#c_whybest">STRENGTH</a></li>
-            <li><a href="#d_portfolio">PORTFOLIO</a></li>
-            <li><a href="#e_artworks">ARTWORKS</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="a_home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-content">
-                <h1 class="hero-title"><span class="sub">신입 웹퍼블리셔</span> 정겨울입니다!</h1>
-                <p class="hero-subtitle">#열정적인 #회복탄력성</p>
-                <p class="hero-subtitle">#활동적인 #함께달리기</p>
-                <a href="https://drive.google.com/file/d/1l4r5cWl22ZNnAVhfwjJRsDUfzd-NZ66j/view?usp=drive_link"
-                    class="hire-btn" target="_blank">이력서 보기</a>
-                <a href="https://github.com/winter-jung" class="hire-btn" target="_blank">깃허브 가기</a>
-            </div>
-            <div class="hero-image">
-                <div class="person-silhouette"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="b_about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image"></div>
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <div class="profile-info">
-                        <div class="info-group">
-                            <h3>정겨울 / Kyeoule - Jung</h3>
-                            <ul>
-                                <li>1999.07.30</li>
-                                <li>경기도 양주시 거주</li>
-                                <li>010-3570-1620</li>
-                                <li>wkdpffl@naver.com</li>
-                            </ul>
-                        </div>
-                        <div class="info-group">
-                            <h3>학력 / 경력</h3>
-                            <ul>
-                                <li>24.06 - 24.08 유니크스튜디오 디자인 인턴</li>
-                                <li><span>18.10 - 24.11</span> 명지전문대학 산업디자인 졸업</li>
-                                <li>25.04 - 25.10 생성형 AI 개발기획자 양성 과정 수료</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#contact-info" class="services-btn">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Best Section -->
-    <section id="c_whybest" class="why-best">
-        <div class="container">
-            <div class="why-best-content">
-                <div class="why-best-text">
-
-                    <h2>Why Im Best</h2>
-                    <p>저는 러닝을 좋아하며, 입사 후에도 퇴근 후 매일 러닝을 이어갈 계획입니다.<br>
-                        러닝은 제게 단순한 운동을 넘어<br>
-                        <span>‘건강한 몸에 건강한 정신이 깃든다’</span>는 말을 실천하는 삶의 습관입니다.<br>
-                        꾸준한 러닝을 통해 체력을 유지하고, <span>열정</span>과 <span>집중력</span>을 높이며,<br>
-                        변화나 난관 앞에서도 <span>빠르게 회복</span>해 끝까지 완주하는 태도를 길러왔습니다.<br>
-                        이러한 끈기와 회복력은 제가 가장 자신 있게 내세울 수 있는 강점이므로<br>
-                        팀과 <span>함께 프로젝트를 완성</span>해 나가는 데 든든한 에너지가 되어줄 것이라 믿습니다.
-                    </p>
-                </div>
-                <div class="skills">
-                    <div class="skill-item">
-                        <h3>#열정적인</h3>
-                    </div>
-                    <div class="skill-item">
-                        <h3>#회복탄력성</h3>
-                    </div>
-                    <div class="skill-item">
-                        <h3>#함께달리기</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="c_service" class="services">
-        <div class="container">
-            <h2 class="section-title">What I Do</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="icon-branding"></i>
-                    </div>
-                    <h3>그래픽 디자인</h3>
-                    <p>어도비 일러스트, 포토샵 툴을 사용한 그래픽 디자인</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="icon-app"></i>
-                    </div>
-                    <h3>UI/UX 및 웹 개발</h3>
-                    <p>Vs code와 피그마 툴을 사용한<br>프로토타입 제작 및 웹 개발</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="icon-graphic"></i>
-                    </div>
-                    <h3>영상 제작</h3>
-                    <p>어도비 프리미어, 에펙, AI 생성툴을 사용한 영상 제작 및 편집</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="icon-web"></i>
-                    </div>
-                    <h3>협업</h3>
-                    <p>피그마와 노션을 사용한<br>협업 활동 강화</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="d_portfolio" class="portfolio">
-        <div class="container">
-
-
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="title-decoration"></div>
-                    <h2>Portfolio</h2>
-                    <div class="title-decoration"></div>
-                </div>
-
-            </div>
-            <div class="portfolio-grid">
-                <!-- Portfolio items would go here -->
-                <div class="portfolio-images">
-
-                    <div class="portfolio-item"><img src="./image/more-bomb.gif" alt=""></div>
-
-                    <div class="portfolio-text">
-                        <span class="no">
-                            <p>01</p>Project
-                        </span>
-                        <div class="p-intro">"파이썬과 리액트를 활용해 TMDB의 데이터베이스를 가져와<br> 연결하는 연습을 한 프로젝트입니다."</div>
-                        <div class="pf">
-                            <p>기술스택 : REACT / PYTHON </p>
-                            <p>배포매체 : Vercel / Render</p>
-                            <p>작업기간 : 3주</p>
-                            <p>본인기여도 : 45%</p>
-                        </div>
-                        <a href="https://frontend-omega-self.vercel.app/" class="p-btn" target="_blank">사이트</a>
-                        <a href="https://github.com/winter-jung/frontend" class="p-btn" target="_blank">깃허브</a>
-                        <a href="#" class="p-btn" target="_blank">기획서</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-images">
-
-                <div class="portfolio-item"><img src="./image/pizza-storm.gif" alt=""></div>
-
-                <div class="portfolio-text">
-                    <span class="no">
-                        <p>02</p>Project
-                    </span>
-                    <div class="p-intro">"html, css, 자바스크립트를 활용하여 동적효과 구현을 연습한<br>카피 프로젝트입니다."</div>
-                    <div class="pf">
-                        <p>기술스택 : HTML / CSS / JAVASCRIPY </p>
-                        <p>배포매체 : Git </p>
-                        <p>작업기간 : 3주</p>
-                        <p>본인기여도 : 100%</p>
-                    </div>
-                    <a href="https://winter-jung.github.io/project1/" class="p-btn" target="_blank">사이트</a>
-                    <a href="https://github.com/winter-jung/project1" class="p-btn" target="_blank">깃허브</a>
-
-
-                </div>
-            </div>
-            <div class="portfolio-images">
-
-                <div class="portfolio-item"><img src="./image/livengrow.PNG" alt=""></div>
-
-                <div class="portfolio-text">
-                    <span class="no">
-                        <p>03</p>Project
-                    </span>
-                    <div class="p-intro">"AI 툴로 생성한 이미지와 영상들을 활용하여<br>화장품 브랜드 광고 영상을 제작한 프로젝트입니다."</div>
-                    <div class="pf">
-                        <p>기술스택 : PREMIERE / HAILUO AI / KLING AI</p>
-                        <p>배포매체 : MP4</p>
-                        <p>작업기간 : 1주</p>
-                        <p>본인기여도 :50%</p>
-                    </div>
-                    <a href="https://frontend-omega-self.vercel.app/" class="p-btn" target="_blank">동영상</a>
-                    <a href="#" class="p-btn" target="_blank">기획서</a>
-
-                </div>
-            </div>
-               <div class="portfolio-images">
-
-                <div class="portfolio-item"><img src="./image/youtube.PNG" alt=""></div>
-
-                <div class="portfolio-text">
-                    <span class="no">
-                        <p>04</p>Project
-                    </span>
-                    <div class="p-intro">"VLLO 앱을 활용하여<br>'먹방'크리에이터 촬영 및 편집한 프로젝트입니다."</div>
-                    <div class="pf">
-                        <p>기술스택 : VLLO</p>
-                        <p>배포매체 : Youtube</p>
-                        <p>작업기간 : 5일</p>
-                        <p>본인기여도 :100%</p>
-                    </div>
-                    <a href="https://youtu.be/ZWDCzUlIH9Q?si=sIU-OLTXfVw5Mz4_" class="p-btn" target="_blank">동영상</a>
-                    <a href="#" class="p-btn" target="_blank">기획서</a>
-
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="mock">
-                    <div class="left">
-                        <span class="no">
-                            <p>05</p>Project
-                        </span>
-                        <div class="p-intro">"피그마 프로토타입 기능을 활용한 여행 쇼핑몰 앱 제작 프로젝트입니다."</div>
-                        <div class="pf">
-                            <p>기술스택 : FIGMA </p>
-                            <p>작업기간 : 2주</p>
-                            <p>본인기여도 : 70%</p>
-                        </div>
-                        <a href="https://www.figma.com/proto/T7gWpfXwrvssxNMyOjys06/UXUI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&t=lTSQAinjsqiFTxWo-1" class="p-btn" target="_blank">프로토타입</a>
-                        <a href="#" class="p-btn" target="_blank">기획서</a>
-
-                    </div>
-                    <div class="crop right">
-                        <iframe
-                            src="https://embed.figma.com/proto/T7gWpfXwrvssxNMyOjys06/UXUI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?page-id=0%3A1&node-id=4-2623&p=f&viewport=2195%2C1889%2C0.51&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A2485&embed-host=share&hide-ui=1"
-                            allowfullscreen></iframe>
-
-                    </div>
-                </div>
-
-            </div> <!-- .portfolio-grid -->
-        </div> <!-- .container -->
-    </section>
-
-
-
-
-    <!-- filtering Section -->
-
-    <section id="e_artworks" class="artworks">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-title">
-                    <div class="title-decoration"></div>
-                    <h2>Artworks of Graphic Design</h2>
-                    <div class="title-decoration"></div>
-                </div>
-
-            </div>
-            <div class="filter">
-                <button class="fbtn active" data-filter="all">All</button>
-                <button class="fbtn" data-filter="mdl">2D</button>
-                <button class="fbtn" data-filter="fsh">Contents</button>
-                <button class="fbtn" data-filter="ads">Goods</button>
-                <button class="fbtn" data-filter="awd">Logo</button>
-            </div>
-            <div class="grid">
-                <div class="item" data-cate="mdl" data-url="./sub1.html">
-                    <img src="./image/diary-thumbnail.png" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>굿노트 다이어리</h4>
-                        <p>굿노트 전용 만년형 다이어리 디자인 제작</p>
-                    </div>
-                </div>
-                <div class="item" data-cate="fsh" data-url="./sub2.html">
-                    <img src="https://placedog.net/500?id=7" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>model</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="item" data-cate="ads" data-url="./sub2.html">
-                    <img src="https://placedog.net/500?id=15" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>model</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="item" data-cate="awd" data-url="./sub2.html">
-                    <img src="https://placedog.net/500?id=55" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>model</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="item" data-cate="mdl" data-url="./sub2.html">
-                    <img src="https://placedog.net/500?id=5" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>model</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-                <div class="item" data-cate="fsh" data-url="./sub1.html">
-                    <img src="https://placedog.net/500?id=7" alt="Portfolio Item">
-                    <div class="overlay">
-                        <h4>model</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-body">
-                <!-- Ajax 내용이 여기에 로드됩니다 -->
-            </div>
-        </div>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <dotlottie-wc src="./imgs/logo.json" speed="1" style="width: 100%; height: 100%;" mode="forward" loop autoplay
+          class="lottie"></dotlottie-wc>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#artworks">ARTWORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
-
-
-
-
-<!-- skill section -->
-
-
-<!-- <section class="skills">
-        <div class="container">
-
-                <div class="skills-text">
-                     <div class="title-decoration"></div>
-                    <h2>Artworks of Graphic Design</h2>
-                    <div class="title-decoration"></div>
-                </div>
-
-                <div class="skills-list">
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">01</span>
-                                <div class="skill-icon">
-                                    <img src="images/excel_16x1.svg" alt="Figma">
-                                </div>
-                            </div>
-                            <h3>Excel</h3>
-                            <span class="skill-category">MS Office</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">02</span>
-                                <div class="skill-icon">
-                                    <img src="images/word_16x1.svg" alt="Framer">
-                                </div>
-                            </div>
-                            <h3>Word</h3>
-                            <span class="skill-category">MS Office</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">03</span>
-                                <div class="skill-icon">
-                                    <img src="images/powerpoint_16x1.svg" alt="powerpoint">
-                                </div>
-                            </div>
-                            <h3>PowerPoint</h3>
-                            <span class="skill-category">MS Office</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">04</span>
-                                <div class="skill-icon">
-                                    <img src="images/photoshop-40.svg" alt="photoshop">
-                                </div>
-                            </div>
-                            <h3>Photoshop</h3>
-                            <span class="skill-category">Adobe</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">05</span>
-                                <div class="skill-icon">
-                                    <img src="images/illustrator-40.svg" alt="illustrator">
-                                </div>
-                            </div>
-                            <h3>Illustrator</h3>
-                            <span class="skill-category">Adobe</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">06</span>
-                                <div class="skill-icon">
-                                    <img src="images/after-effects-40.svg" alt="ae">
-                                </div>
-                            </div>
-                            <h3>After Effects</h3>
-                            <span class="skill-category">Adobe</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">07</span>
-                                <div class="skill-icon">
-                                    <img src="images/premiere-pro-40.svg" alt="pr">
-                                </div>
-                            </div>
-                            <h3>Premiere Pro</h3>
-                            <span class="skill-category">Adobe</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">08</span>
-                                <div class="skill-icon">
-                                    <img src="images/figma.svg" alt="figma">
-                                </div>
-                            </div>
-                            <h3>Figma</h3>
-                            <span class="skill-category">협업 Tool</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">09</span>
-                                <div class="skill-icon">
-                                    <img src="images/notion.svg" alt="notion">
-                                </div>
-                            </div>
-                            <h3>Notion</h3>
-                            <span class="skill-category">협업 Tool</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">10</span>
-                                <div class="skill-icon">
-                                    <img src="images/chatgpt.svg" alt="chatgpt">
-                                </div>
-                            </div>
-                            <h3>Chat GPT</h3>
-                            <span class="skill-category">AI Tool</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">11</span>
-                                <div class="skill-icon">
-                                    <img src="images/gemini.webp" alt="gemini">
-                                </div>
-                            </div>
-                            <h3>Gemini</h3>
-                            <span class="skill-category">AI Tool</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">12</span>
-                                <div class="skill-icon">
-                                    <img src="images/claude.svg" alt="claude">
-                                </div>
-                            </div>
-                            <h3>Claude</h3>
-                            <span class="skill-category">AI Tool</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">13</span>
-                                <div class="skill-icon">
-                                    <img src="images/copilot.svg" alt="copilot">
-                                </div>
-                            </div>
-                            <h3>Claude</h3>
-                            <span class="skill-category">AI Tool</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">14</span>
-                                <div class="skill-icon">
-                                    <img src="" alt="">
-                                </div>
-                            </div <h3>그 외 사진 및 영상<br>생성형 AI</h3>
-                            <span class="skill-category">AI Tool</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">15</span>
-                                <div class="skill-icon">
-                                    <img src="images/html.svg" alt="html">
-                                </div>
-                            </div>
-                            <h3>HTML</h3>
-                            <span class="skill-category">마크업 언어</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">16</span>
-                                <div class="skill-icon">
-                                    <img src="images/css.svg" alt="css">
-                                </div>
-                            </div>
-                            <h3>CSS</h3>
-                            <span class="skill-category">스타일시트 언어</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">17</span>
-                                <div class="skill-icon">
-                                    <img src="images/js.svg" alt="js">
-                                </div>
-                            </div>
-                            <h3>JavaScript</h3>
-                            <span class="skill-category">스크립트 언어</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">18</span>
-                                <div class="skill-icon">
-                                    <img src="images/react.svg" alt="react">
-                                </div>
-                            </div>
-                            <h3>React</h3>
-                            <span class="skill-category">JavaScript<br>라이브러리</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-headline">
-                                <span class="skill-number">19</span>
-                                <div class="skill-icon">
-                                    <img src="images/git.svg" alt="git">
-                                </div>
-                            </div>
-                            <h3>Git</h3>
-                            <span class="skill-category">버전관리</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-
-
-
-    <!-- / filltering -->
-
-
-
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Testimonial</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-item active">
-                    <p>유쾌, 상쾌, 통쾌를 동시에 갖춘 예의 바르고 센스 넘치는 매력 만점 겨울이</p>
-                    <div class="testimonial-author">
-                        <h4>김지연</h4>
-                        <span>Designer, CreativeRacer.net</span>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <p>Suspendisse condimentum egestas tellus et viverra. Vestibulum euismod lacus eget nisi ornare, id
-                        laoreet tortor dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        condimentum egestas tellus et viverra. Vestibulum euismod lacus eget nisi ornare, id laoreet
-                        tortor dapibus.</p>
-                    <div class="testimonial-author">
-                        <h4>Rahman</h4>
-                        <span>Designer, CreativeRacer.net</span>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum egestas tellus
-                        et viverra. Vestibulum euismod lacus eget nisi ornare, id laoreet tortor dapibus. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum egestas tellus et viverra.
-                        Vestibulum euismod lacus eget nisi ornare.</p>
-                    <div class="testimonial-author">
-                        <h4>Munna</h4>
-                        <span>Developer, CreativeRacer.net</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-
-
-    <div id="contact-info" class="contact-info">
-        <div class="contact-item">
-            <strong>📩 wkdpffl730@gmail.com</strong>
-        </div>
-        <div class="contact-item">
-            <strong>🔧 https://github.com/winter-jung</strong>
-        </div>
-        <div class="contact-item">
-            <strong>📞 010 - 3570 - 1620</strong>
-        </div>
-        <div class="contact-item">
-            <strong>📌경기도 양주시</strong>
-        </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; winter-jung - 2025. All Rights Reserved By Creative Racer.</p>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-greeting">WinteRUN,</h1>
+        <h2 class="hero-title">런닝맨</h2>
+        <p class="hero-subtitle text-noto text-gray"><span>회복력과 끈기</span> <span>러닝으로 다져진 멀티플레이어</span></p>
+        <div class="hero-info">
+          <div class="info-item">
+            <span class="info-label text-noto">Age</span>
+            <span class="info-value">1999.07</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label text-noto">Address</span>
+            <span class="info-value">경기 양주</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label text-noto">E-mail</span>
+            <span class="info-value">wkdpffl@naver.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label text-noto">Phone</span>
+            <span class="info-value">010-3570-1620</span>
+          </div>
+          <div class="info-item">
+            <a href="https://drive.google.com/file/d/1l4r5cWl22ZNnAVhfwjJRsDUfzd-NZ66j/view"
+              class="btn transition-smooth" target="_blank">
+              <i class="fa-solid fa-file"></i> 이력서보기</a>
+          </div>
+          <div class="info-item">
+            <a href="https://github.com/winter-jung" class="btn transition-smooth"><i
+                class="fa-brands fa-github"></i>깃허브보기</a>
+          </div>
         </div>
-    </footer>
-
-    <!-- Custom JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" -->
-    <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        const totalLength = 628;
-        const animation = $('.charts');
-        const progressBox = $('.chart');
-        function ani() {
-            progressBox.each(function () {
-
-
-                let tg = $(this);
-                let title = tg.find('h3');
-                let tgNum = title.attr('data-num');
-                let circle = tg.find('circle');
-                $({ rate: 0 }).animate(
-                    { rate: tgNum },
-                    {
-                        duration: 2000,
-                        progress: function () {
-                            let now = this.rate;
-                            let amount = totalLength - (totalLength * now) / 100;
-                            title.text(Math.floor(now))
-                            circle.css({ strokeDashoffset: amount })
-                        }
-                    }
-                )
-
-            })
-        }
-        ScrollTrigger.create({
-            trigger: '.charts',
-            start: 'top 80%', /*.charts 상단에서 뷰포트 80%에서 시작*/
-            once: true,
-            onEnter: function () {
-                ani()
-            }
-        })
-        bodymovin.loadAnimation({
-            container: document.querySelector('.about-image'), // 애니메이션을 표시할 요소
-            renderer: 'svg', // 렌더링 방식 (svg / canvas / html 중 선택)
-            loop: true, // 애니메이션 반복 여부
-            autoplay: true, // 자동 재생 여부
-            path: './image/ani1.json', // 애니메이션 파일 경로
-        });
-
-
-    </script>
-    <script>
-        const circle = document.querySelector('svg circle');
-        console.log(circle.getTotalLength());
-
-    </script>
-    <script src="script.js"></script>
-    <script src="js.js"></script>
-
+      </div>
+      <div class="hero-images">
+        <img src="./imgs/profile.png" alt="정겨울" class="hero-img-main">
+        <img src="./imgs/texture-2-min.png" alt="Texture" class="hero-img-texture">
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title pr">About Me</h2>
+      <p class="section-description text-noto text-gray">2년간 780일 연속 러닝하며 지속력과 회복력을 키웠습니다. 학교 프로젝트에서 수정 요청이 반복되거나 마감이 촉박할 때도 끝까지 완주했습니다.
+        하프마라톤 3회 완주 경험처럼, 긴 프로젝트도 포기하지 않고 완성해낸 게 제 강점입니다</p>
+      <div class="timeline">
+        <div class="timeline-item about-item">
+          <div class="timeline-content">
+            <span class="timeline-date">25.04 - 25.10 </span>
+            <h3 class="timeline-title">생성형 AI 개발기획자 양성 과정 수료</h3>
+            <h4 class="timeline-company">MBC 아카데미</h4>
+            <p class="timeline-text">6개월간의 집중 교육 과정과 팀 프로젝트를 통해, 기획부터 디자인(Figma/포토샵), 프론트엔드(React), 백엔드(Python) 개발 및
+              배포(Vercel)까지 웹서비스의 전 과정을 주도적으로 수행하는 역량을 길렀습니다. Git/GitHub를 활용한 협업 능력과 생성형 AI 기술 이해도를 바탕으로 실무에 즉시 기여하겠습니다.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item about-item">
+          <div class="timeline-content">
+            <span class="timeline-date">24.06 - 24.08</span>
+            <h3 class="timeline-title">그래픽 디자인</h3>
+            <h4 class="timeline-company">유니크스튜디오</h4>
+            <p class="timeline-text">유니크스튜디오 2개월 인턴십에서 현수막·PPT·커버 디자인 20종을 제작하며 타이트한 마감과 클라이언트 수정 요청에 대응했습니다. 짧은 기간이지만
+              현장에서 빠르게 결과물을 내는 실행력을 체득했습니다.</p>
+          </div>
+        </div>
+        <div class="timeline-item about-item">
+          <div class="timeline-content">
+            <span class="timeline-date">18.10 - 24.11</span>
+            <h3 class="timeline-title">산업디자인 전공</h3>
+            <h4 class="timeline-company">명지전문대학교</h4>
+            <p class="timeline-text"> 명지전문대학 산업디자인 전공을 통해 다진 탄탄한 조형 감각과 시각 원리에 대한 깊은 이해가 강점입니다. 포토샵, 일러스트, Figma 툴을 능숙하게
+              다루며, 사용자 경험을 고려한 매력적인 비주얼 디자인을 구현합니다. 웹 퍼블리싱에 필수적인 레이아웃, 타이포그래피 이해를 바탕으로 완성도 높은 디자인을 책임지겠습니다</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="projects" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-description text-noto text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <!-- Logo Carousel -->
+      <div class="logo-carousel">
+        <div class="logo-track">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_18.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_20.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_23.jpg"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_24.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_25.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_05.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_10.png"
+            alt="Logo">
+          <img src="https://kits.pixel-show.com/careerster/wp-content/uploads/sites/4/2020/03/the_logos_60_black_13.png"
+            alt="Logo">
+        </div>
+      </div>
+      <!-- Project Cards -->
+      <div class="project-grid">
+        <div class="project-card transition-slow">
+          <img src="./imgs/more-bomb.gif" alt="Project">
+          <div class="project-content">
+            <h3 class="project-title">1. 몰밤 MOREBOMB</h3>
+            <p class="project-text text-noto text-gray">파이썬과 리액트를 활용해 TMDB의 데이터베이스를 가져와
+              연결하는 연습을 한 프로젝트입니다.</p>
+            <a href="https://frontend-omega-self.vercel.app/" class="btn_line transition-smooth">사이트</a>
+            <a href="https://github.com/winter-jung/frontend" class="btn_line transition-smooth">깃허브</a>
+            <a href="https://drive.google.com/file/d/1-wfeC9kPylxYkfZaDW_N2t5X_8abbTTF/view?usp=sharing"
+              class="btn_line transition-smooth" target="_blank">기획서</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./imgs/pizza-storm.gif" alt="Project">
+          <div class="project-content">
+            <h3 class="project-title">2. 피자스톰 PIZZASTORM</h3>
+            <p class="project-text text-noto text-gray">html, css, 자바스크립트를 활용하여 동적효과 구현을 연습한
+              카피 프로젝트입니다.</p>
+            <a href="https://winter-jung.github.io/project1/" class="btn_line transition-smooth">사이트</a>
+            <a href="https://github.com/winter-jung/project1" class="btn_line transition-smooth">깃허브</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./imgs/livengrow.PNG" alt="Project">
+          <div class="project-content">
+            <h3 class="project-title">3. Live & Grow</h3>
+            <p class="project-text text-noto text-gray">AI 툴로 생성한 이미지와 영상들을 활용하여
+              화장품 브랜드 광고 영상을 제작한 프로젝트입니다.</p>
+            <a href="https://drive.google.com/file/d/1KtU1gG-plJD9G3tJPSXrbU7En7TxD5BI/view?usp=sharing"
+              class="btn_line transition-smooth" target="_blank">동영상</a>
+            <a href="https://drive.google.com/file/d/1Cmzo3uhrjTbQ-cbrdr5zkasLhrbIbata/view?usp=sharing"
+              class="btn_line transition-smooth" target="_blank">기획서</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./imgs/youtube.PNG" alt="Project">
+          <div class="project-content">
+            <h3 class="project-title">4. 1인미디어 먹방</h3>
+            <p class="project-text text-noto text-gray">VLLO 앱을 활용하여
+              '먹방'크리에이터 컨셉촬영 및 편집한 프로젝트입니다.</p>
+            <p>기술스택 : REACT / PYTHON </p>
+            <p>배포매체 : Vercel / Render</p>
+            <p>작업기간 : 3주</p>
+            <p>본인기여도 : 45%</p>
+            <a href="https://youtu.be/ZWDCzUlIH9Q?si=sIU-OLTXfVw5Mz4_" class="btn_line transition-smooth" target="_blank">동영상</a>
+            <a href="https://drive.google.com/file/d/1rnYjRaEgj1ENVdHu1L4EhUZmqfdkj1jf/view?usp=sharing"
+              class="btn_line transition-smooth" target="_blank">기획서</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="figma-project-wrapper">
+        <div class="crop">
+          <iframe
+            src="https://embed.figma.com/proto/T7gWpfXwrvssxNMyOjys06/UXUI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?page-id=0%3A1&node-id=4-2623&p=f&viewport=2195%2C1889%2c0.51&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A2485&embed-host=share&hide-ui=1"
+            allowfullscreen></iframe>
+        </div>
+        <div class="project-content figma-content">
+          <h3 class="project-title">5. Figma 프로토타입</h3>
+          <p class="project-text text-noto text-gray">UXUI 프로젝트의 Figma 프로토타입입니다.</p>
+          <p>작업내용 : 인터페이스 디자인</p>
+          <p>사용도구 : Figma</p>
+          <p>작업기간 : 2주</p>
+          <p>본인기여도 : 100%</p>
+          <a href="https://www.figma.com/file/T7gWpfXwrvssxNMyOjys06/UXUI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=AYkQFjFk9QaHgfB3-1" class="btn_line transition-smooth" target="_blank">Figma 프로젝트</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Professional Skills</h2>
+      <p class="section-description text-noto text-gray">Senior Web Developer specializing in front end development. Experienced with all
+        stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages
+        including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">WordPress</span>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="95"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Redux</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">CSS & HTML</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Python</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Photoshop</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ArtWork Section -->
+  <section class="artworks" id="artworks">
+    <div class="container">
+      <h2 class="section-title">Artworks</h2>
+      <p class="section-description text-noto text-gray">디자인 작업물과 창작 활동을 소개합니다.</p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">contact me</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item text-noto">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Belgium, Brussels</span>
+          </div>
+          <div class="contact-item text-noto">
+            <i class="fas fa-envelope"></i>
+            <span>bryanwood@company.com</span>
+          </div>
+          <div class="contact-item text-noto">
+            <i class="fas fa-phone"></i>
+            <span>+1 256 254 84 56</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
